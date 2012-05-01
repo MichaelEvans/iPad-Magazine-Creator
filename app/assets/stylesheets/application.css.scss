@@ -1,7 +1,8 @@
 @import "compass";
 @import "compass/css3";
 @import "compass/utilities";
-//@import "layout";
+@import "compass/reset";
+@import "objects";
 
 body{
 	font-family: "Helvetica Neue", sans-serif;
@@ -11,11 +12,11 @@ body{
 #editor_canvas{
 	width: 768px;
 	height: 1024px;
-	//border: 1px dashed black;
 	background-color: white;
 	margin-left: 250px;
 	@include box-shadow(#000 0 0 10px);
 	position: relative;
+	overflow: hidden;
 }
 
 #sidebar{

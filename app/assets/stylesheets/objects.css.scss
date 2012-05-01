@@ -1,0 +1,22 @@
+@import "compass/css3";
+
+.h1_tag{
+	padding: 5px;
+	textarea{
+		outline: none;
+		border: 0;
+		background: none;
+		@include appearance(none);
+		font-family: "Helvetica Neue";
+		font-size: 60px;
+		font-weight: bold;
+		padding: 5px;
+	}
+	textarea:hover{
+		border: 1px dotted rgba(0,0,0,0.5);
+	}
+	textarea:focus{
+		background: white;
+		border: 1px dashed rgba(0,0,0,0.5);
+	}
+}

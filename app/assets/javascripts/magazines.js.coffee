@@ -5,5 +5,8 @@ $(document).ready ->
 	
 	$('#add_title_button').click ->
 		$('.h1_tag').show()
+		$( ".h1_tag" ).draggable()
 		return false
+
+
 

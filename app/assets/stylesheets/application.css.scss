@@ -1,0 +1,49 @@
+@import "compass";
+@import "compass/css3";
+@import "compass/utilities";
+//@import "layout";
+
+body{
+	font-family: "Helvetica Neue", sans-serif;
+	margin: 0px;
+}
+#editor_canvas{
+	width: 768px;
+	height: 1024px;
+	border: 1px dashed black;
+	background-color: white;
+	margin-left: 250px;
+}
+
+#sidebar{
+	background: #333;
+	float: left;
+	width: 250px;
+}
+
+.pages .page{
+	margin: 20px auto;
+	background-color: #FFF;
+	width: 150px;
+	height: 200px;
+	@include clearfix;
+	@include box-shadow(#000 0 2px 5px);
+	.page_title{
+		margin: 20px;
+		text-align: center;
+	}
+}
+
+.toolbar{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	background-color: black;
+	padding: 20px;
+	@include background(linear-gradient(color-stops(#333, #222)), #222);
+	@include text-shadow(#000 0 -1px 0);
+	a {
+		color: #ccc;
+		text-decoration: none;
+	}
+}

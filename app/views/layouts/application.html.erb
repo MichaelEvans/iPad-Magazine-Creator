@@ -8,7 +8,17 @@
 </head>
 <body>
 
-<%= yield %>
+<div id="sidebar">
+	<%= yield :sidebar %>
+</div>
+
+<div id="editor_canvas">
+	<%= yield %>
+</div>
+
+<div class="toolbar">
+	<%= link_to "Add Title", "#", :id => "add_title_button" %>
+</div>
 
 </body>
 </html>

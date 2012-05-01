@@ -9,4 +9,7 @@ $(document).ready ->
 		return false
 
 
+	$('.pages .page').click ->
+		page_num = $(this).attr('data-page')
+		$('#editor_canvas').animate({scrollTop: page_num * 1024}, 750);
 

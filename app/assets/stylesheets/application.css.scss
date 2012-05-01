@@ -13,8 +13,8 @@ body{
 }
 #editor_canvas{
 	width: 768px;
-	//height: 1024px;
-	background-color: white;
+	height: 1024px;
+	//background-color: white;
 	margin-left: 250px;
 	@include box-shadow(#000 0 0 10px);
 	position: relative;
@@ -22,9 +22,15 @@ body{
   	overflow-x: hidden;
 	.page {
 		//@include inline-block;
+		background-color: white;
 		position: relative;
-
+		width: 768px;
+		height: 1024px;
+		margin-bottom: 20px;
+		//height: 1024px;
 	}
+	bottom: 36px;
+	
 }
 
 #sidebar{
@@ -67,3 +73,5 @@ body{
 		text-decoration: none;
 	}
 }
+
+.clear { display: none; }

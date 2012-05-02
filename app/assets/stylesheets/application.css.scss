@@ -22,16 +22,20 @@ body{
 	//overflow-y: hidden;
   	overflow: auto;
 	.pages_area{
-		width: 3000px;
+		width: 1540px;
 		.page {
 			@include inline-block;
 			overflow: hidden;
-			//background-color: white;
+			background-color: white;
 			position: relative;
 			width: 768px;
 			height: 1024px;
 			//margin-bottom: 20px;
 			//height: 1024px;
+		}
+		.text_page{
+			@include box-shadow(rgba(0,0,0,0.4) 0 0 50px inset);
+			@include background(inline-image("lil_fiber.png"));
 		}
 	}
 	bottom: 36px;

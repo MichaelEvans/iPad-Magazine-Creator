@@ -20,3 +20,16 @@
 		border: 1px dashed rgba(0,0,0,0.5);
 	}
 }
+
+.text_block_object{
+	textarea{
+		outline: none;
+		border: 0;
+		line-height: 1.6em;
+		font-size: 15px;
+		background: none;
+	}
+	textarea:hover{
+		border: 1px dashed rgba(0,0,0,0.5);
+	}
+}

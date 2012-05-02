@@ -49,8 +49,9 @@ body{
 	//float: left;
 	width: 250px;
 	padding-bottom: 20px;
-	overflow: scroll;
 	z-index: 99999;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .pages .page{

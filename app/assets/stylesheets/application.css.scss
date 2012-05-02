@@ -43,7 +43,8 @@ body{
 	float: left;
 	width: 250px;
 	padding-bottom: 20px;
-	overflow: scroll;
+	overflow-y: scroll;
+	overflow-x: hidden;
 }
 
 .pages .page{

@@ -8,26 +8,31 @@ body{
 	font-family: "Helvetica Neue", sans-serif;
 	margin: 0px;
 	@include background(inline-image("dark_tire.png"));
-	position: absolute;
+	//position: absolute;
 	//overflow:hidden;
 }
 #editor_canvas{
+	margin-left: 250px;
+	//padding-left: 250px;
+	//background-color: white;
+	@include box-shadow(#000 0 0 10px);
 	width: 768px;
 	height: 1024px;
-	//background-color: white;
-	margin-left: 250px;
-	@include box-shadow(#000 0 0 10px);
-	position: relative;
-	overflow-y: auto;
-  	overflow-x: hidden;
-	.page {
-		//@include inline-block;
-		background-color: white;
-		position: relative;
-		width: 768px;
-		height: 1024px;
-		margin-bottom: 20px;
-		//height: 1024px;
+	//position: fixed;
+	//overflow-y: hidden;
+  	overflow: auto;
+	.pages_area{
+		width: 3000px;
+		.page {
+			@include inline-block;
+			overflow: hidden;
+			//background-color: white;
+			position: relative;
+			width: 768px;
+			height: 1024px;
+			//margin-bottom: 20px;
+			//height: 1024px;
+		}
 	}
 	bottom: 36px;
 	
@@ -36,14 +41,16 @@ body{
 #sidebar{
 	//background: #222;
 	position: fixed;
+	@include background(inline-image("dark_tire.png"));
 	//display: absolute;
 	//height: 100%;
 	top: 0;
 	bottom: 56px;
-	float: left;
+	//float: left;
 	width: 250px;
 	padding-bottom: 20px;
 	overflow: scroll;
+	z-index: 99999;
 }
 
 .pages .page{

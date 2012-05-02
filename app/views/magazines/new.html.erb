@@ -1,11 +1,13 @@
 <div id="editor">
-	<div class="page" id="page_1">
-		<%= image_tag "grass.jpg", :style => "height: 1024px;" %>
-		<div class="h1_tag" style="display: none; position: absolute; top: 300px; left: 50px;">
-			<textarea name="magazine_title" style="width: 768px"></textarea>
+	<div class="pages_area">
+		<div class="page" id="page_1">
+			<%= image_tag "grass.jpg", :style => "height: 1024px;" %>
+			<div class="h1_tag" style="display: none; position: absolute; top: 250px; left: 75px;">
+				<textarea name="magazine_title" width="100px" style="min-width: 0px;"></textarea>
+			</div>
 		</div>
-	</div>
-	<div class="page" id="page_2" style="background: red; height: 1024px;">
+		<div class="page" id="page_2" style="background: red; height: 1024px;">
+		</div>
 	</div>
 </div>
 
@@ -13,6 +15,9 @@
 	<div class="pages">
 		<div class="page" data-page="0">
 			<div class="page_title">Title Page</div>
+		</div>
+		<div class="page" data-page="1">
+			<div class="page_title">Content Page</div>
 		</div>
 		<div class="page" data-page="1">
 			<div class="page_title">Content Page</div>

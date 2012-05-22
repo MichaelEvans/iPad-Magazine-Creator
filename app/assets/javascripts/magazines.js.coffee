@@ -18,3 +18,9 @@ $(document).ready ->
 		$(".text_block_object").show()
 		return false
 
+	$('#add_page_button').click ->
+		$('.pages_area').append('<div class="page text_page"></div>')
+		pages_area = $('.pages_area .page')
+		$('.pages_area').width(pages_area.length*771)
+		$('.sidebar .pages').append('<div class="page"></div>')
+		return false

@@ -58,17 +58,27 @@ body{
 	overflow-x: hidden;
 }
 
-.pages .page{
-	margin: 20px auto;
-	background-color: #FFF;
-	width: 150px;
-	height: 200px;
-	@include clearfix;
-	@include box-shadow(#000 0 2px 5px);
-	.page_title{
-		margin: 20px;
+.pages 
+	.add_page{
 		text-align: center;
+		a{
+			color: #ccc;
+			text-decoration: none;
+		}
+		
 	}
+	.page{
+		margin: 20px auto;
+		background-color: #FFF;
+		width: 150px;
+		height: 200px;
+		@include clearfix;
+		@include box-shadow(#000 0 2px 5px);
+		.page_title{
+			margin: 20px;
+			text-align: center;
+		}
+
 }
 
 .toolbar{
